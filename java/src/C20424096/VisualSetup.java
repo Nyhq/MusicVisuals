@@ -1,6 +1,7 @@
 package C20424096;
 
 import ie.tudublin.Visual;
+import processing.core.*;
 
 public class VisualSetup extends Visual {
 
@@ -10,8 +11,10 @@ public class VisualSetup extends Visual {
     }
 
     // Set variables
-    int VisInt = 1;
+    int VisInt = 0;
     boolean paused = true;
+    PImage img;
+    PImage bg;
 
     // Keyboard music controls
     public void keyPressed() {
@@ -36,7 +39,8 @@ public class VisualSetup extends Visual {
             }
 
             // Play audio file
-            case '1': {
+            // add , '3', '4' when adding visual
+            case '1', '2': {
                 getAudioPlayer().play();
                 break;
             }
@@ -51,6 +55,10 @@ public class VisualSetup extends Visual {
 
         setFrameSize(1024);
         frameRate(60);
+
+        // load background image
+        img = loadImage("start.png");
+        bg = loadImage("fortnite.jpg");
 
         // Start minim and load audio file
         startMinim();
@@ -67,8 +75,14 @@ public class VisualSetup extends Visual {
     public void draw() {
         switch (VisInt) {
 
+            case 0: {
+                background(img);
+                ap.pause();
+                break;
+            }
+
             case 1: {
-                background(200);
+                background(bg);
                 SeanVis.render(this);
                 break;
             }

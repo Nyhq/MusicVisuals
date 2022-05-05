@@ -4,14 +4,14 @@ import ie.tudublin.Visual;
 
 public class Sean {
 
-    //Global session variables
+    //Global session variable
     int width;
     float[] lerpedBuffer;
     float y;
     float smtz;
     float Amp;
 
-
+   
     //Assign variables
     public Sean(int width) {
         this.width = width;
@@ -49,8 +49,6 @@ public class Sean {
         avg = sum / (float) v.getAudioBuffer().size();
         sum = 0;
 
-        //Make background grey
-        v.background(200);
 
         for (int i = 0; i < v.getAudioBuffer().size(); i++) {
 
