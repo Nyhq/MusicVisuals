@@ -78,5 +78,6 @@ Our code works by firstly housing each visualisation in it's own class, named af
 Above is an example of how the switching mechanic works in our project. User input is taken from the keyboard and used to changed the variable "VisInt", this selects the current visualisation that is displayed to the screen.
 
 # What I am most proud of in the assignment
-[<img src="https://ibb.co/Nrx2vpx" width="100%">](https://www.youtube.com/watch?v=JYBWuL0Xx7s&list=LL&index=1 "Music Visualiser")
-
+[![Music Visualiser]          // Title
+(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)] // Thumbnail
+(#https://youtu.be/JYBWuL0Xx7s?list=LL " Music Visualiser")    // Video Link
