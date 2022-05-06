@@ -1,8 +1,11 @@
 # Music Visualiser Project
-
-Name:
-
-Student Number: 
+ 
+| Name | Student No. |
+|-----------|-----------|
+|Seán Breen | C20424096 |
+|Dominika Adamczewska  | C20422036 |
+|Keith Gore | C20432034 |
+|Juliet Mullarney | C20432604 |
 
 ## Instructions
 - Fork this repository and use it a starter project for your assignment
@@ -13,77 +16,68 @@ Student Number:
 
 # Description of the assignment
 
+We have four java processing visualisations in this assignment. Each section was created by a member of the group. Our visualisations change colors, forms, and sizes in response to the volume and frequency of the music. We utilized the audio minim library to extract audio from an mp3 file.
+
+
 # Instructions
+- Run "main.java" contained within the ie\tudublin package
+- Follow instructions prompted on the screen
 
 # How it works
 
-# What I am most proud of in the assignment
-
-# Markdown Tutorial
-
-This is *emphasis*
-
-This is a bulleted list
-
-- Item
-- Item
-
-This is a numbered list
-
-1. Item
-1. Item
-
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
-
-This is code:
+Our code works by firstly housing each visualisation in it's own class, named after each group member (Sean.java... etc.). The driving code for this project is housed within "VisualSetup.java". Within this file is all of the setup code needed to render and switch the visualisations.
 
 ```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
+   // Declaration of each indivduial visualisation
+    Sean SeanVis = new Sean(3440);
+    Domi DomiVis = new Domi();
+    Keith KeithVis = new Keith();
+    Juliet JulietVis = new Juliet();
+    
+     public void draw() {
+        switch (VisInt) {
+
+            case 0: {
+                background(img);
+                ap.pause();
+                break;
+            }
+
+            case 1: {
+                background(bg);
+                SeanVis.render(this);
+                break;
+            }
+
+            case 2: {
+                background(0);
+                DomiVis.render(this);
+                break;
+            }
+
+            case 3: {
+                background(0);
+                KeithVis.render(this);
+                break;
+            }
+
+            /*
+             * case 4:
+             * {
+             * background(0);
+             * JulietVis.render(this);
+             * break;
+             * }
+             */
+
+        }
+
+    }
 ```
 
-So is this without specifying the language:
+Above is an example of how the switching mechanic works in our project. User input is taken from the keyboard and used to changed the variable "VisInt", this selects the current visualisation that is displayed to the screen.
 
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
+# What I am most proud of in the assignment
 
-This is an image using a relative URL:
 
-![An image](images/p8.png)
-
-This is an image using an absolute URL:
-
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
-
-This is a youtube video:
-
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
-
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
