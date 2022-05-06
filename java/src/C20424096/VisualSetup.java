@@ -15,10 +15,11 @@ public class VisualSetup extends Visual {
     boolean paused = true;
     PImage img;
     PImage bg;
+    PImage JulBG;
 
     // Keyboard music controls
     public void keyPressed() {
-        if (key >= '0' && key <= '3') {
+        if (key >= '0' && key <= '4') {
             VisInt = key - '0';
         }
 
@@ -40,7 +41,7 @@ public class VisualSetup extends Visual {
 
             // Play audio file
             // add , '3', '4' when adding visual
-            case '1', '2', '3': {
+            case '1', '2', '3', '4' : {
                 getAudioPlayer().play();
                 break;
             }
@@ -59,6 +60,7 @@ public class VisualSetup extends Visual {
         // load background image
         img = loadImage("start.png");
         bg = loadImage("fortnite.jpg");
+        JulBG =loadImage("Juliet.png");
 
         // Start minim and load audio file
         startMinim();
@@ -99,14 +101,14 @@ public class VisualSetup extends Visual {
                 break;
             }
 
-            /*
-             * case 4:
-             * {
-             * background(0);
-             * JulietVis.render(this);
-             * break;
-             * }
-             */
+         
+            case 4:
+              {
+              background(JulBG);
+              JulietVis.render(this);
+              break;
+              }
+        
 
         }
 
