@@ -18,7 +18,7 @@ public class VisualSetup extends Visual {
 
     // Keyboard music controls
     public void keyPressed() {
-        if (key >= '0' && key <= '5') {
+        if (key >= '0' && key <= '3') {
             VisInt = key - '0';
         }
 
@@ -40,7 +40,7 @@ public class VisualSetup extends Visual {
 
             // Play audio file
             // add , '3', '4' when adding visual
-            case '1', '2': {
+            case '1', '2', '3': {
                 getAudioPlayer().play();
                 break;
             }
@@ -93,14 +93,11 @@ public class VisualSetup extends Visual {
                 break;
             }
 
-            /*
-             * case 3:
-             * {
-             * background(0);
-             * KeithVis.render(this);
-             * break;
-             * }
-             */
+            case 3: {
+                background(0);
+                KeithVis.render(this);
+                break;
+            }
 
             /*
              * case 4:
