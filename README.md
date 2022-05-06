@@ -80,6 +80,6 @@ Above is an example of how the switching mechanic works in our project. User inp
 # What I am most proud of in the assignment
 
 <a href="https://youtu.be/JYBWuL0Xx7s?list=LL" target="_blank">
- <img src="https://img.youtube.com/vi/JYBWuL0Xx7s/0.jpg" alt="Watch the video" width="240" height="180" border="10" />
+ <img src="https://img.youtube.com/vi/JYBWuL0Xx7s/1.jpg" alt="Watch the video" width="240" height="180" border="10" />
 </a>
 
