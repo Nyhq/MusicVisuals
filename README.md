@@ -32,16 +32,17 @@ We have four java processing visualisations in this assignment. Each section was
 
 # How it works
 
-Our code works by firstly housing each visualisation in it's own class, named after each group member (Sean.java... etc.). The driving code for this project is housed within "VisualSetup.java". Within this file is all of the setup code needed to render and switch the visualisations.
+Our code works by firstly housing each visualisation in it's own class, named after each group member and also one combining all of the visualisations (Sean.java... etc.). The driving code for this project is housed within "VisualSetup.java". Within this file is all of the setup code needed to render and switch the visualisations.
 
 ```Java
-   // Declaration of each indivduial visualisation
+  // Declaration of each indivduial visualisation
     Sean SeanVis = new Sean(3440);
     Domi DomiVis = new Domi();
     Keith KeithVis = new Keith();
     Juliet JulietVis = new Juliet();
-    
-     public void draw() {
+    KeithMini Keith = new KeithMini();
+
+    public void draw() {
         switch (VisInt) {
 
             case 0: {
@@ -68,14 +69,23 @@ Our code works by firstly housing each visualisation in it's own class, named af
                 break;
             }
 
-            /*
-             * case 4:
-             * {
-             * background(0);
-             * JulietVis.render(this);
-             * break;
-             * }
-             */
+         
+            case 4:
+              {
+              background(JulBG);
+              JulietVis.render(this);
+              break;
+              }
+
+              case 5:
+              {
+              background(bg);
+              SeanVis.render(this);
+              DomiVis.render(this);
+              Keith.render(this);
+              break;
+              }
+        
 
         }
 
