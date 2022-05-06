@@ -90,8 +90,6 @@ Our team worked incredibly hard to make this project the best we could. We are v
 
 We believe we succeeded in making a very object oriented program through our use of classes, inheritance, and the PApplet library. We are also proud of using more foreign concepts - such as creating shapes in 3D.
 
-It was a very rewarding process to watch everyone's visuals come to life, and we believe that the end result is very captivating. 
-
-Despite our visuals being quite different from each other, they worked exceptionally well together, and created a fascinating outcome; which we are incredibly proud of.
+It was a very rewarding process to watch everyone's visuals come to life, and we believe that the end result is very captivating. Despite our visuals being quite different from each other, they worked exceptionally well together, and created a fascinating outcome; which we are incredibly proud of.
 
 
