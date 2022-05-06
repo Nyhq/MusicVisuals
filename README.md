@@ -18,7 +18,7 @@
 
 We have four java processing visualisations in this assignment. Each section was created by a member of the group. Our visualisations change colors, forms, and sizes in response to the volume and frequency of the music. We utilized the audio minim library to extract audio from an mp3 file.
 
-##Video of assignment running
+## Video of assignment running
 
 <a href="https://youtu.be/JYBWuL0Xx7s?list=LL" target="_blank">
  <img src="https://img.youtube.com/vi/JYBWuL0Xx7s/1.jpg" alt="Watch the video" width="800" height="800" border="10" />
