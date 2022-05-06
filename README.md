@@ -115,6 +115,12 @@ I also added in rainbow circles of a random size from 0-90 to each corner and to
 
 ## Visual 3 - Keith
 
+When I started my visualisation I had a solid box just spinning at mach 20 speeds and I though what can I add to this so I decided to use unFill with the box so I could place something in it.
+
+At this point the Sphere was also not filled and I started messing around with the X and Y's until I reached a point I thought it flowed nicely. I decided I wanted it to flash RGB because who doesn't like pretty flashing clours. I messed about and decided to put a even larger circle around the box and when I ran it I thought it looked really cool.
+
+My final change to this was to Fill the inner circle white and once I done that it gave me flash backs to the crystal maze. So I've dubbed my Portion of the project "The Crystal Maze".
+
 ![image](https://user-images.githubusercontent.com/72255273/167148290-3ff06fd2-6b0f-41f5-bfb6-329322a13688.png)
 
 ## Visual 4 - Juliet
