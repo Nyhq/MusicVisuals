@@ -94,6 +94,40 @@ Our code works by firstly housing each visualisation in it's own class, named af
 
 Above is an example of how the switching mechanic works in our project. User input is taken from the keyboard and used to changed the variable "VisInt", this selects the current visualisation that is displayed to the screen.
 
+## Visual 1 - Seán
+
+The visualisation I designed was a relatively simple concept. I took the idea of a traditional music visualiser and added it to an extra border so that it would display on both the top and bottom of the output screen. A lerped audio buffer was used to change the visual elements, drawn as smoothed rectangles, this made them responsive to both sound and colour.
+
+Finally, I restricted the domain in which the colours can appear to match them to the background image, which was chosen specifically to encompass all of our group's interests.
+
+![image](https://user-images.githubusercontent.com/72255273/167148188-dd6cb189-120d-4f42-840f-9d9e8b333c72.png)
+
+
+## Visual 2 - Domi
+
+My visualisation was inspired by the circles on a classic speaker. I thought it would be cool to make them audio reactive, however I also wanted it to be less basic than just reactive circles. 
+
+The visualisation is made up of a rectangle border containing three 3D spheres, which in turn are made up of small circular particles. The size of these circle particles depends on the amplitude of the music. In order to create rainbow colours for a trippy effect, I gave the stroke a random value of 0-255. You can also rotate the visualiation using your mouse.
+
+I also added in rainbow circles of a random size from 0-90 to each corner and to the middle of the visualizer. These circles do not react to music, but give the illusion of doing so.
+
+![image](https://user-images.githubusercontent.com/72255273/167148236-dce4e284-1d28-4847-9ba3-9a3abf464b83.png)
+
+## Visual 3 - Keith
+
+![image](https://user-images.githubusercontent.com/72255273/167148290-3ff06fd2-6b0f-41f5-bfb6-329322a13688.png)
+
+## Visual 4 - Juliet
+
+![image](https://user-images.githubusercontent.com/72255273/167148337-08ad0682-3d51-4cbc-852e-22dea63b2c4a.png)
+
+## Visual 5 - Combined
+
+![image](https://user-images.githubusercontent.com/72255273/167148377-a18024ef-3565-412e-b289-b741f6bd62e9.png)
+
+
+
+
 # What I am most proud of in the assignment
 
 Our team worked incredibly hard to make this project the best we could. We are very proud of being able to deal with the challenges we faced along the way, and making it all work and come together to form a great project.
